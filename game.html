@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+
+    <style>
+        body {
+              font-family: 'Orbitron', sans-serif;
+                margin-top: 0%;
+                padding-top: 100px;
+                background-color: aliceblue;
+                background-image: url("pl/game.jpg")
+    
+        }
+        
+
+        header {
+        
+            position: fixed;
+            top: 0;
+            right: 0%;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            z-index: 1000;
+            text-align: center;
+            float: right;
+
+        }
+    
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.063);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             display: flex;
+             gap: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 200px;
+             height: 300px;
+             object-fit: cover;
+            border-radius: 10px;
+            
+
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <center>
+        <h1> Game Zone</h1>
+        </center>
+
+    
+    </header>
+
+   <div class="products">
+
+    <div class="card">
+        <a href= "
+        https://oceanofgames.com/gta-3-download-free-7249128/" target="_blank">
+        <img src="pl/gt3.jpg"> </a>
+    
+        
+    </div>
+
+    <div class="card">
+        <a href="https://www.apunkagames.net/2018/07/resident-evil-4-ultimate-hd-edition-game-e11.html" target="_blank">
+        <img src="img/download.jpg"> </a>
+       
+        
+    </div>
+
+    <div class="card">
+        <a href="https://oceanofgames.com/gta-vice-city-free-download-1793412/" target="_blank">
+        <img src="pl/Grand Theft Auto Vice City.jpg">
+        </a>
+        
+        
+    </div>
+    <div class="card">
+        <a href="https://www.apunkagames.net/2013/11/gta-san-andreas-game-e1.html"target="_blank">
+        <img src="pl/b842905d13c3976ad8fef013509d338d.jpg"> </a>
+    
+        
+    </div>
+     <div class="card">
+        <a href="https://steamunlocked.org/red-dead-redemption-free-download  " target="_blank">      
+        <img src="pl/rdr2.jpg">
+        </a>
+        
+        
+    </div>
+    <div class="card">
+        <a href="https://https://www.apunkagames.net/2014/10/call-of-duty-modern-warfare-3-game-e6.html" target="_blank">
+        <img src="pl/Mafia II  (2010).jpg"> </a>
+        
+        
+    </div>
+     <div class="card">
+        <a href="https://oceanofgames.com/need-for-speed-most-wanted-download-free/" target="_blank">
+        <img src="pl/Гоночки.jpg"> </a>
+        
+        
+    
+
+
+</div>
+<div class="card">
+        <a href="https://noterock.xyz/tracker/index.php?code=amm&source=&p=1&k=1&ksrc=click&q=b64%3ARG93bmxvYWQgR1RBIDQgUEMgR2FtZSBmb3IgRnJlZQ" target="_blank">
+        <img src="pl/Grand Theft Auto.jpg"> </a>
+        
+       
+        
+
+
+</div>
+<div class="card">
+        <a href="https://noterock.xyz/tracker/index.php?code=amm&source=&p=1&k=1&ksrc=click&q=b64%3ARG93bmxvYWQgTWF4IFBheW5lIDEgUEMgR2FtZSBmb3IgRnJlZQ" target="_blank">
+        <img src="pl/max.jpg"> </a>
+        
+    
+    
+
+
+</div>
+<div class="card">
+        <a href="https://www.apunkagames.net/2014/10/call-of-duty-modern-warfare-3-game-e6.html" target="_blank">
+        <img src="pl/c3.jpg"> </a>
+        
+       
+        
+
+
+</div>
+<div class="card">
+        <a href="https://www.apunkagames.net/2018/07/sleeping-dogs-1-game.html   " target="_blank">
+        <img src="pl/Sleeping Dogs - Jean-Daniel Petit.jpg"> </a>
+
+        
+       
+        
+
+
+</div>
+<div class="card">
+        <a href="https://www.apunkagames.net/2014/04/god-of-war-2-e7.html" target="_blank">
+        <img src="pl/g2.jpg"> </a>
+
+       
+        
+
+
+</div>
+
+
+
+
+
+
+    <script>
+        let cartCount = 0;
+        let cartTotal = 0;
+
+        function addToCart(price) {
+
+            cartCount++;
+
+            cartTotal += price;
+
+            document.getElementById("cart-count").textContent = cartCount;
+
+            document.getElementById("cart-total").textContent =
+                cartTotal.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
