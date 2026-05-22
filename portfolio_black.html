@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Student Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#000000;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+    nav{
+      width:100%;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,0.8);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#ffffff;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    nav ul li a:hover{
+      color:#cccccc;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:0 10%;
+      background:#000000;
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content h1 span{
+      color:#cccccc;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      color:#aaaaaa;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 35px;
+      background:#222222;
+      color:#ffffff;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+      border:2px solid #555555;
+      box-shadow:0 0 20px rgba(255,255,255,0.1);
+    }
+
+    .btn:hover{
+      transform:scale(1.08);
+      background:#333333;
+      box-shadow:0 0 30px rgba(255,255,255,0.2);
+    }
+
+    /* SECTION */
+    section{
+      padding:100px 10%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:60px;
+      color:#ffffff;
+    }
+
+    /* ABOUT */
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 0 25px rgba(255,255,255,0.1);
+    }
+
+    .about-text p{
+      line-height:1.8;
+      color:#aaaaaa;
+    }
+
+    /* SKILLS */
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+    }
+
+    .skill{
+      background:#111111;
+      padding:30px;
+      text-align:center;
+      border-radius:20px;
+      transition:0.4s;
+      border:1px solid #333333;
+    }
+
+    .skill:hover{
+      transform:translateY(-10px);
+      background:#222222;
+      color:#ffffff;
+      box-shadow:0 0 20px rgba(255,255,255,0.15);
+    }
+
+    /* PROJECTS */
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .project-card{
+      background:#111111;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.4s;
+      border:1px solid #333333;
+    }
+
+    .project-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(255,255,255,0.1);
+    }
+
+    .project-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .project-info{
+      padding:20px;
+    }
+
+    .project-info h3{
+      margin-bottom:10px;
+      color:#ffffff;
+    }
+
+    .project-info p{
+      color:#aaaaaa;
+      font-size:14px;
+    }
+
+    /* CONTACT */
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:15px 0;
+      color:#aaaaaa;
+      font-size:18px;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#000000;
+      color:#555555;
+      border-top:1px solid #222222;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .hero-content h1{
+        font-size:40px;
+      }
+      .about{
+        grid-template-columns:1fr;
+      }
+      nav ul{
+        gap:15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Your Name</span></h1>
+      <p>Student | Web Developer | Designer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" alt="">
+      <div class="about-text">
+        <p>
+          I am a passionate student and aspiring web developer.
+          I love creating beautiful and responsive websites using
+          HTML, CSS, JavaScript and modern technologies.
+          My goal is to become a professional full-stack developer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">React</div>
+      <div class="skill">UI/UX Design</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Modern personal portfolio website with stylish UI.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="">
+        <div class="project-info">
+          <h3>Calculator App</h3>
+          <p>Responsive calculator built using JavaScript.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="">
+        <div class="project-info">
+          <h3>Student System</h3>
+          <p>Student management mini project with database.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="contact">
+      <p>Email: yourname@gmail.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Tamil Nadu, India</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Your Name | All Rights Reserved
+  </footer>
+
+</body>
+</html>
